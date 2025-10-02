@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fundo - Linha Neon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="neon-line" aria-hidden="true">
+      <div class="segment left"></div>
+      <div class="bolt" title="Raio">
+        <svg viewBox="0 0 100 160" preserveAspectRatio="xMidYMid meet" class="bolt-svg" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="60,0 95,60 65,60 80,155 20,90 50,90 10,0"/>
+        </svg>
+      </div>
+      <div class="segment right"></div>
+    </div>
+  </div>
+
+<div class="overlay">
+
+  <div class="profile">
+    <div class="foto">
+      <img src="foto.jpg" alt="Minha Foto">
+    </div>
+    <div class="info">
+      <h1 class="nome">Francisco Luís Volpato</h1>
+      <p class="idade">Idade: 19 anos</p>
+      <p class="endereco">Endereço: Marau/RS</p>
+      <p class="profissao">Desenvolvedor Web</p>
+    </div>
+  </div>
+
+  <div class="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+      Sempre gostei de tecnologia, principalmente desenvolvimento web e jogos.
+      Gosto de criar designs e funcionalidades de sites, além de adorar video games.
+      Tenho como objetivo me tornar profissional em desenvolvimento web e desenvolvimento de jogos
+      tendo como um dos principais objetivos, desenvolver um jogo com IA adaptativa.
+    </p>
+  </div>
+
+  <div class="formacao">
+    <h2>Formação</h2>
+    <p>Atualmente estou no 2º semestre da faculdade de Ciências da Computação.</p>
+
+    <button class="habilidades-btn" onclick="abrirArvore()">Habilidades</button>
+  </div>
+
+  <div class="experiencia">
+    <h2>Experiência Profissional</h2>
+    <p>
+      Trabalho como T.I. em uma empresa de contabilidade.
+      Criei processos de automação para facilitar processos repetitivos e criei sites para a interface da empresa.
+    </p>
+  </div>
+
+  <div class="cursos">
+    <h2>Cursos Extracurriculares</h2>
+
+    <div class="curso">
+      <h3>Curso de Inglês</h3>
+      <p>6 anos de estudo na instituição de ensino <strong>Porthal</strong>.</p>
+    </div>
+
+    <div class="curso">
+      <h3>Pacote Office</h3>
+      <p>Curso de 1 ano na instituição <strong>Porthal</strong>.</p>
+    </div>  
+
+    <div class="curso">
+      <h3>Curso online de Unity</h3>
+      <p>Estou cursando, site: <strong>Hotmart</strong></p>
+    </div>  
+  </div>
+
+  <div class="contatos">
+    <h2>Contatos</h2>
+    <p><strong>Telefone:</strong> (54) 99668-4316</p>
+    <p><strong>E-mail:</strong> franciscovolpato15@gmail.com</p>
+
+    <div class="botoes-contato">
+      <a href="https://www.linkedin.com/feed/" target="_blank" class="btn linkedin">LinkedIn</a>
+      <a href="https://github.com/Francisco98765421" target="_blank" class="btn github">GitHub</a>
+    </div>
+  </div>
+</div>
+
+ <div class="popup" id="popupArvore" aria-hidden="true">
+  <div class="popup-content" role="dialog" aria-modal="true" aria-label="Árvore de habilidades">
+    <button class="fechar" id="fecharBtn" aria-label="Fechar">×</button>
+
+    <div class="arvore-habilidades" id="arvore">
+      <div class="node" id="python" style="top:5%; left:50%;">
+        <img src="icons/python.png" alt="Python"><span>Python</span>
+      </div>
+
+      <div class="node" id="java" style="top:25%; left:33%;">
+        <img src="icons/java.png" alt="Java"><span>Java</span>
+      </div>
+
+      <div class="node" id="html" style="top:25%; left:67%;">
+        <img src="icons/html.png" alt="HTML"><span>HTML</span>
+      </div>
+
+      <div class="node" id="sql" style="top:45%; left:33%;">
+        <img src="icons/sql.png" alt="SQL"><span>SQL</span>
+      </div>
+
+      <div class="node" id="css" style="top:45%; left:57%;">
+        <img src="icons/css.png" alt="CSS"><span>CSS</span>
+      </div>
+
+      <div class="node" id="js" style="top:45%; left:77%;">
+        <img src="icons/javascript.png" alt="JavaScript"><span>JavaScript</span>
+      </div>
+
+      <div class="node locked" id="unity" style="top:65%; left:44%;">
+        <img src="icons/unity.png" alt="Unity"><span>Unity</span><div class="lock">🔒</div>
+      </div>
+      <div class="node locked" id="csharp" style="top:65%; left:54%;">
+        <img src="icons/csharp.png" alt="C#"><span>C#</span><div class="lock">🔒</div>
+      </div>
+      <div class="node locked" id="cpp" style="top:65%; left:64%;">
+        <img src="icons/cpp.png" alt="C++"><span>C++</span><div class="lock">🔒</div>
+      </div>
+      <div class="node locked" id="c" style="top:65%; left:74%;">
+        <img src="icons/c.png" alt="C"><span>C</span><div class="lock">🔒</div>
+      </div>
+
+      <svg id="connections" class="arvore-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+
+    <div class="xp-bar-container">
+      <div class="xp-bar" style="width: 45%;"></div>
+      <span class="xp-text">25 / 100</span>
+    </div>
+
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
